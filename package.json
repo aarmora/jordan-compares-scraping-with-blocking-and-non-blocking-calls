@@ -1,0 +1,29 @@
+{
+	"name": "jordan-does-scraping-with-puppeteer-and-axios",
+	"version": "1.0.0",
+	"description": "Jordan scrapes the web with both axios and puppeteer.",
+	"main": "./dist/index.js",
+	"scripts": {
+		"start": "tsc && node ./dist/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/aarmora/jordan-compares-scraping-with-blocking-and-non-blocking-calls"
+	},
+	"keywords": [
+		"puppeteer",
+		"axios",
+		"typescript",
+		"javascript",
+		"web",
+		"scraping"
+	],
+	"author": "Jordan Hansen",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^0.19.0"
+	},
+	"devDependencies": {
+		"@types/axios": "^0.14.0"
+	}
+}
