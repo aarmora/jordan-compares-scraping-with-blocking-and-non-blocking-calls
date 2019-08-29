@@ -1,35 +1,32 @@
 import axios from 'axios';
 
-(async () => {
-	const websites = [
-		'https://amazon.com',
-		'https://google.com',
-		'https://www.reddit.com/r/Entrepreneur/comments/cwjkcm/launching_a_service_that_provides_business_leads/',
-		'https://www.reddit.com/r/Entrepreneur/',
-		'https://bing.com',
-		'https://reddit.com',
-		'https://linkedin.com',
-		'https://yahoo.com',
-		'https://www.reddit.com/r/funny/',
-		'https://youtube.com',
-		'https://twitter.com',
-		'https://instagram.com',
-		'https://www.amazon.com/dp/B07HB2KL4C',
-		'https://www.amazon.com/dp/B01LTHP2ZK',
-		'https://www.reddit.com/r/funny/comments/cwnmwv/not_a_huge_fan_of_the_new_candy_machine_at_work/',
-		'https://boise.craigslist.org/',
-		'https://boise.craigslist.org/d/office-commercial/search/off',
-		'https://boise.craigslist.org/d/science-biotech/search/sci',
-		'https://baidu.com',
-		'https://msn.com',
-		'https://www.ebay.com/deals/home-garden'
+const websites = [
+	'https://amazon.com',
+	'https://google.com',
+	'https://www.reddit.com/r/Entrepreneur/comments/cwjkcm/launching_a_service_that_provides_business_leads/',
+	'https://www.reddit.com/r/Entrepreneur/',
+	'https://bing.com',
+	'https://reddit.com',
+	'https://linkedin.com',
+	'https://yahoo.com',
+	'https://www.reddit.com/r/funny/',
+	'https://youtube.com',
+	'https://twitter.com',
+	'https://instagram.com',
+	'https://www.amazon.com/dp/B07HB2KL4C',
+	'https://www.amazon.com/dp/B01LTHP2ZK',
+	'https://www.reddit.com/r/funny/comments/cwnmwv/not_a_huge_fan_of_the_new_candy_machine_at_work/',
+	'https://boise.craigslist.org/',
+	'https://boise.craigslist.org/d/office-commercial/search/off',
+	'https://boise.craigslist.org/d/science-biotech/search/sci',
+	'https://baidu.com',
+	'https://msn.com',
+	'https://www.ebay.com/deals/home-garden'
 
-	];
+];
 
-	scrapeWithAwait(websites);
-	// scrapeWithoutAwait(websites);
-
-})();
+// scrapeWithAwait(websites);
+scrapeWithoutAwait(websites);
 
 async function scrapeWithoutAwait(websites: string[]) {
 
